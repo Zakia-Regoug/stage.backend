@@ -1,5 +1,7 @@
 package ma.digiup.assignement.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import ma.digiup.assignement.domain.util.EventType;
 
 import javax.persistence.*;

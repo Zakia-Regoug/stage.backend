@@ -6,7 +6,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "DEP")
-public class MoneyDeposit {
+public class Deposit {
 
   @Id
   @GeneratedValue(strategy = GenerationType.AUTO)
@@ -28,6 +28,9 @@ public class MoneyDeposit {
   @Column(length = 200)
   private String motifDeposit;
 
+
+
+  //getters and setters , d'apres IOC Inversion de controle on peut utilisier seulement @Data de lombok pour se concentrer au code metier et laisser le code technique au framework
   public BigDecimal getMontant() {
     return Montant;
   }
